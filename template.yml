@@ -1,0 +1,13 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: 'Simple template containign'
+Resources:
+  mehfBuildkiteCDTestLambda:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: 'index.handler'
+      Runtime: 'nodejs10.x'
+      Description: 'Simple test lambda.'
+      MemorySize: 1024
+      Timeout: 15
+      Role: '[role in your AWS account]'
